@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nageswara Rao Nirukonda | Senior Operations Leader</title>
+    <meta name="description" content="Portfolio of Nageswara Rao Nirukonda - Senior Operations Leader & Manufacturing Expert">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'steel-900': '#0f172a', /* Deep Navy */
+                        'steel-800': '#1e293b',
+                        'steel-700': '#334155',
+                        'accent-blue': '#3b82f6', /* Corporate Blue */
+                        'metallic-gray': '#94a3b8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: #334155;
+            z-index: 0;
+        }
+
+        /* Subtle Grain Texture for background */
+        .bg-grain {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-steel-900 text-slate-200 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <span class="font-serif text-xl font-bold tracking-wider text-white">NRN.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#experience" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Experience</a>
+                        <a href="#skills" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Skills</a>
+                        <a href="#projects" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="#contact" class="px-5 py-2.5 rounded-sm bg-slate-100 text-steel-900 font-semibold text-sm hover:bg-accent-blue hover:text-white transition-all">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-700 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-steel-900 border-t border-slate-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="#experience" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Experience</a>
+                <a href="#skills" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Skills</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 bg-grain">
+        <!-- Background Abstract Shape -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-accent-blue opacity-10 blur-3xl rounded-full"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-slate-600 opacity-10 blur-3xl rounded-full"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Text Content -->
+            <div class="lg:col-span-7 space-y-8" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-slate-600 bg-slate-800/50">
+                    <span class="w-2 h-2 rounded-full bg-accent-blue animate-pulse"></span>
+                    <span class="text-xs uppercase tracking-widest text-slate-300 font-semibold">Open to Executive Opportunities</span>
+                </div>
+                
+                <h1 class="font-serif text-5xl lg:text-7xl font-bold text-white leading-tight">
+                    Nageswara Rao <br />
+                    <span class="text-metallic-gray">Nirukonda</span>
+                </h1>
+                
+                <h2 class="text-xl lg:text-2xl text-accent-blue font-medium tracking-wide">
+                    Senior Operations Leader | SAIL
+                </h2>
+                
+                <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                    Driving operational excellence and technological transformation in the steel manufacturing sector. 
+                    14+ years of experience bridging the gap between heavy industry and modern management at scale.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 bg-white text-steel-900 font-bold rounded-sm hover:bg-slate-200 transition-all text-center">
+                        Get in Touch
+                    </a>
+                    <a href="#" class="px-8 py-4 border border-slate-600 text-white font-medium rounded-sm hover:border-accent-blue hover:text-accent-blue transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image/Visual -->
+            <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-duration="1200">
+                <div class="relative w-full aspect-[4/5] max-w-md mx-auto">
+                    <div class="absolute inset-0 border-2 border-slate-700 translate-x-4 translate-y-4 rounded-sm"></div>
+                    <!-- Placeholder for User Image -->
+                    <div class="absolute inset-0 bg-slate-800 overflow-hidden rounded-sm shadow-2xl">
+                         <!-- REPLACE THE SRC BELOW WITH YOUR ACTUAL PHOTO -->
+                        <img src="nr.jpg" 
+                             alt="Nageswara Rao Nirukonda" 
+                             class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats/About -->
+    <section id="about" class="py-24 bg-steel-800 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div data-aos="fade-right">
+                    <h3 class="font-serif text-3xl text-white mb-6">Executive Summary</h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                        I am a Senior Manager at the Steel Authority of India Limited (SAIL) with over a decade of hands-on leadership in high-stakes manufacturing environments. My career has been defined by a relentless pursuit of operational efficiency, quality assurance, and the integration of emerging technologies into legacy systems.
+                    </p>
+                    <p class="text-slate-400 text-lg leading-relaxed">
+                        Currently based in the Greater Raipur Area, I specialize in flash butt welding operations, large-scale project management, and cross-functional team leadership. My transition from pure metallurgy to management information systems allows me to offer a unique, data-driven perspective on industrial operations.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="glass-panel p-8 rounded-sm">
+                        <span class="block text-4xl font-bold text-accent-blue mb-2">14+</span>
+                        <span class="text-slate-300">Years Experience</span>
+                    </div>
+                    <div class="glass-panel p-8 rounded-sm">
+                        <span class="block text-4xl font-bold text-accent-blue mb-2">M.Tech</span>
+                        <span class="text-slate-300">IIT Kharagpur</span>
+                    </div>
+                    <div class="glass-panel p-8 rounded-sm">
+                        <span class="block text-4xl font-bold text-accent-blue mb-2">MBA</span>
+                        <span class="text-slate-300">SVKM's NMIMS</span>
+                    </div>
+                    <div class="glass-panel p-8 rounded-sm">
+                        <span class="block text-4xl font-bold text-accent-blue mb-2">Level-2</span>
+                        <span class="text-slate-300">ECT & UT Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 bg-steel-900">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-3xl md:text-4xl text-white">Professional Journey</h2>
+                <div class="w-20 h-1 bg-accent-blue mx-auto mt-4"></div>
+            </div>
+
+            <div class="relative timeline-line space-y-12">
+                
+                <!-- Role 1 -->
+                <div class="relative pl-12 md:pl-16 group" data-aos="fade-up">
+                    <div class="absolute left-[11px] top-1 w-5 h-5 rounded-full bg-accent-blue border-4 border-steel-900 z-10 shadow-[0_0_15px_rgba(59,130,246,0.5)]"></div>
+                    <div class="glass-panel p-8 rounded-sm hover:border-slate-500 transition-colors">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Senior Manager</h3>
+                                <p class="text-accent-blue font-medium">Steel Authority of India Limited (SAIL)</p>
+                            </div>
+                            <span class="text-sm text-slate-400 bg-slate-800 px-3 py-1 rounded mt-2 md:mt-0 inline-block">Aug 2024 – Present</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-5 text-slate-400 space-y-2">
+                            <li>Leading strategic operations for rail welding and structural optimization.</li>
+                            <li>Overseeing large-scale team management and safety protocol implementation.</li>
+                            <li>Driving digital transformation initiatives within the manufacturing unit.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative pl-12 md:pl-16 group" data-aos="fade-up">
+                    <div class="absolute left-[13px] top-1 w-4 h-4 rounded-full bg-slate-500 border-4 border-steel-900 z-10"></div>
+                    <div class="p-6 rounded-sm border border-slate-800 hover:bg-steel-800 transition-colors">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-200">Manager</h3>
+                                <p class="text-slate-400">Steel Authority of India Limited (SAIL)</p>
+                            </div>
+                            <span class="text-sm text-slate-500">Jul 2021 – Jul 2024</span>
+                        </div>
+                        <p class="text-slate-400">Managed core production shifts, focused on reducing downtime and improving flash butt welding quality metrics.</p>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="relative pl-12 md:pl-16 group" data-aos="fade-up">
+                    <div class="absolute left-[13px] top-1 w-4 h-4 rounded-full bg-slate-500 border-4 border-steel-900 z-10"></div>
+                    <div class="p-6 rounded-sm border border-slate-800 hover:bg-steel-800 transition-colors">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-200">Assistant Manager</h3>
+                                <p class="text-slate-400">Steel Authority of India Limited (SAIL)</p>
+                            </div>
+                            <span class="text-sm text-slate-500">2014 – 2024</span>
+                        </div>
+                         <p class="text-slate-400">Long-term tenure demonstrating reliability and consistent promotion. Focused on Cryogenics applications and Metallurgy.</p>
+                    </div>
+                </div>
+                
+                 <!-- Earlier Roles (Grouped) -->
+                 <div class="relative pl-12 md:pl-16 group" data-aos="fade-up">
+                    <div class="absolute left-[13px] top-1 w-4 h-4 rounded-full bg-slate-600 border-4 border-steel-900 z-10"></div>
+                    <div class="p-6 rounded-sm border border-slate-800 opacity-75">
+                        <h3 class="text-lg font-bold text-slate-300">Early Career</h3>
+                        <div class="mt-2 space-y-4">
+                            <div>
+                                <p class="text-white font-medium">Deputy Manager</p>
+                                <p class="text-sm text-slate-500">Bhilai Steel Plant (Rail & Structural Mill)</p>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Assistant Professor</p>
+                                <p class="text-sm text-slate-500">Amal Jyothi College of Engineering</p>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Research Internship</p>
+                                <p class="text-sm text-slate-500">Schneider Electric</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-steel-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="font-serif text-3xl md:text-4xl text-white mb-4">Core Competencies</h2>
+                <p class="text-slate-400 max-w-2xl">A blend of hard engineering skills and executive management capabilities.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="0">
+                    <i data-lucide="trending-up" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Operational Excellence</h3>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="users" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Executive Management</h3>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="briefcase" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Project Management</h3>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <i data-lucide="factory" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Plant Management</h3>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <i data-lucide="cpu" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Technology Integration</h3>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <i data-lucide="search-check" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Failure Analysis</h3>
+                </div>
+                <!-- Skill Card 7 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <i data-lucide="badge-dollar-sign" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">P&L Management</h3>
+                </div>
+                <!-- Skill Card 8 -->
+                <div class="glass-panel p-6 rounded-sm text-center hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="700">
+                    <i data-lucide="line-chart" class="w-10 h-10 mx-auto text-accent-blue mb-4"></i>
+                    <h3 class="font-medium text-white">Continuous Improvement</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="py-24 bg-steel-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Education -->
+                <div data-aos="fade-right">
+                    <div class="flex items-center gap-3 mb-8">
+                        <i data-lucide="graduation-cap" class="text-accent-blue w-6 h-6"></i>
+                        <h2 class="font-serif text-3xl text-white">Education</h2>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-accent-blue pl-6 py-1">
+                            <h4 class="text-lg font-bold text-white">Executive MBA (MIS)</h4>
+                            <p class="text-slate-400">SVKM's NMIMS</p>
+                            <p class="text-sm text-slate-500">2019 – 2021</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-6 py-1">
+                            <h4 class="text-lg font-bold text-white">M.Tech – Cryogenics</h4>
+                            <p class="text-slate-400">Indian Institute of Technology (IIT) Kharagpur</p>
+                            <p class="text-sm text-slate-500">2012 – 2014</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-6 py-1">
+                            <h4 class="text-lg font-bold text-white">B.Tech – Metallurgy</h4>
+                            <p class="text-slate-400">JNTUH College of Engineering Hyderabad</p>
+                            <p class="text-sm text-slate-500">2006 – 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div data-aos="fade-left">
+                     <div class="flex items-center gap-3 mb-8">
+                        <i data-lucide="award" class="text-accent-blue w-6 h-6"></i>
+                        <h2 class="font-serif text-3xl text-white">Certifications</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-steel-800 p-4 rounded-sm border border-slate-700">
+                            <p class="font-medium text-slate-200">Verified International Academic Qualifications</p>
+                            <p class="text-xs text-slate-500 mt-1">World Education Services (WES)</p>
+                        </div>
+                        <div class="bg-steel-800 p-4 rounded-sm border border-slate-700">
+                            <p class="font-medium text-slate-200">Level-2 ECT</p>
+                            <p class="text-xs text-slate-500 mt-1">Non-Destructive Testing</p>
+                        </div>
+                        <div class="bg-steel-800 p-4 rounded-sm border border-slate-700">
+                            <p class="font-medium text-slate-200">Level-2 UT</p>
+                            <p class="text-xs text-slate-500 mt-1">Ultrasonic Testing</p>
+                        </div>
+                        <div class="bg-steel-800 p-4 rounded-sm border border-slate-700">
+                            <p class="font-medium text-slate-200">Duolingo German</p>
+                            <p class="text-xs text-slate-500 mt-1">Beginner Fluency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section id="projects" class="py-24 bg-gradient-to-br from-steel-800 to-steel-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+             <h2 class="font-serif text-3xl md:text-4xl text-white mb-12 text-center">Featured Research</h2>
+             
+             <div class="glass-panel p-8 md:p-12 rounded-sm border border-accent-blue/30 max-w-4xl mx-auto" data-aos="zoom-in">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="p-4 bg-accent-blue/10 rounded-full shrink-0">
+                        <i data-lucide="flask-conical" class="w-10 h-10 text-accent-blue"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Feasibility Studies on Cryogenically Treated Aluminium Strips</h3>
+                        <p class="text-sm font-semibold text-accent-blue uppercase tracking-wider mb-4">Material Science & Electrical Engineering</p>
+                        <p class="text-slate-300 leading-relaxed mb-6">
+                            Conducted in-depth research on improving electrical conductivity using LN2 cooling and advanced material science approaches. The project focused on the viability of replacing expensive copper in electrical busbar applications with cryogenically treated aluminium and High Tc Superconducting bundles.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-400 rounded-full border border-slate-700">Cryogenics</span>
+                            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-400 rounded-full border border-slate-700">Cost Optimization</span>
+                            <span class="px-3 py-1 bg-slate-800 text-xs text-slate-400 rounded-full border border-slate-700">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-steel-900">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl text-white mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-10">Available for executive leadership roles, consulting, and industry collaborations.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:contact@email.com" class="group flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 border border-slate-700 rounded-sm hover:border-accent-blue transition-all w-full md:w-auto">
+                    <i data-lucide="mail" class="w-5 h-5 text-slate-400 group-hover:text-accent-blue"></i>
+                    <span class="text-slate-200 font-medium">Send an Email</span>
+                </a>
+                <a href="#" class="group flex items-center justify-center gap-3 px-8 py-4 bg-[#0077b5] border border-[#0077b5] rounded-sm hover:bg-[#006097] transition-all w-full md:w-auto">
+                    <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                    <span class="text-white font-medium">Connect on LinkedIn</span>
+                </a>
+            </div>
+            
+            <p class="mt-12 text-slate-600 text-sm">Based in Greater Raipur Area, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-600 text-sm">© 2024 Nageswara Rao Nirukonda. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-slate-600 hover:text-white transition-colors text-sm">Resume</a>
+                <a href="#" class="text-slate-600 hover:text-white transition-colors text-sm">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animate On Scroll
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Smooth Scroll for Anchor Links (Manual Fallback)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
