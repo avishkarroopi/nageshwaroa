@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nageswara Rao Nirukonda | Senior Operations Leader</title>
-    <meta name="description" content="Portfolio of Nageswara Rao Nirukonda - Senior Operations Leader & Manufacturing Expert">
+    <title>Nageshwar Rao N | Senior Operations Leader</title>
+    <meta name="description" content="Portfolio of Nageshwar Rao N - Senior Operations Leader & Manufacturing Expert">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,6 +30,8 @@
                         'steel-700': '#334155',
                         'accent-blue': '#3b82f6', /* Corporate Blue */
                         'metallic-gray': '#94a3b8',
+                        'whatsapp': '#25D366',
+                        'linkedin': '#0077b5',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -64,9 +66,32 @@
         .bg-grain {
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
         }
+        
+        /* Floating Button Animation */
+        .float-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+        }
     </style>
 </head>
 <body class="bg-steel-900 text-slate-200 font-sans antialiased overflow-x-hidden">
+
+    <!-- Floating Action Buttons (Bottom Right) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        <!-- LinkedIn Float -->
+        <a href="https://www.linkedin.com/in/nageswara-rao-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+           target="_blank" 
+           class="float-btn w-14 h-14 bg-linkedin rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-300"
+           title="Connect on LinkedIn">
+            <i data-lucide="linkedin" class="w-6 h-6"></i>
+        </a>
+        <!-- WhatsApp Float -->
+        <a href="https://wa.me/919039683118?text=Hello%20Nageshwar,%20I%20am%20contacting%20you%20via%20your%20portfolio." 
+           target="_blank"
+           class="float-btn w-14 h-14 bg-whatsapp rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-300"
+           title="Chat on WhatsApp">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+    </div>
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b border-slate-700/50">
@@ -80,7 +105,8 @@
                         <a href="#about" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">About</a>
                         <a href="#experience" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Experience</a>
                         <a href="#skills" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Skills</a>
-                        <a href="#projects" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="#projects" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Research</a>
+                        <a href="#awards" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Awards</a>
                         <a href="#contact" class="px-5 py-2.5 rounded-sm bg-slate-100 text-steel-900 font-semibold text-sm hover:bg-accent-blue hover:text-white transition-all">Contact</a>
                     </div>
                 </div>
@@ -99,6 +125,7 @@
                 <a href="#about" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
                 <a href="#experience" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Experience</a>
                 <a href="#skills" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Skills</a>
+                <a href="#awards" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Awards</a>
                 <a href="#contact" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
             </div>
         </div>
@@ -119,8 +146,8 @@
                 </div>
                 
                 <h1 class="font-serif text-5xl lg:text-7xl font-bold text-white leading-tight">
-                    Nageswara Rao <br />
-                    <span class="text-metallic-gray">Nirukonda</span>
+                    Nageshwar Rao <br />
+                    <span class="text-metallic-gray">N</span>
                 </h1>
                 
                 <h2 class="text-xl lg:text-2xl text-accent-blue font-medium tracking-wide">
@@ -133,9 +160,14 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="#contact" class="px-8 py-4 bg-white text-steel-900 font-bold rounded-sm hover:bg-slate-200 transition-all text-center">
+                    <!-- WhatsApp Redirection -->
+                    <a href="https://wa.me/919039683118?text=Hello%20Nageshwar,%20I%20saw%20your%20profile." 
+                       target="_blank"
+                       class="px-8 py-4 bg-white text-steel-900 font-bold rounded-sm hover:bg-slate-200 transition-all text-center flex items-center justify-center gap-2">
+                       <i data-lucide="message-circle" class="w-5 h-5 text-whatsapp"></i>
                         Get in Touch
                     </a>
+                    <!-- Resume Button (Placeholder for file upload) -->
                     <a href="#" class="px-8 py-4 border border-slate-600 text-white font-medium rounded-sm hover:border-accent-blue hover:text-accent-blue transition-all flex items-center justify-center gap-2">
                         <i data-lucide="download" class="w-4 h-4"></i>
                         Download Resume
@@ -147,11 +179,11 @@
             <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-duration="1200">
                 <div class="relative w-full aspect-[4/5] max-w-md mx-auto">
                     <div class="absolute inset-0 border-2 border-slate-700 translate-x-4 translate-y-4 rounded-sm"></div>
-                    <!-- Placeholder for User Image -->
+                    <!-- User Image: nr.jpg -->
                     <div class="absolute inset-0 bg-slate-800 overflow-hidden rounded-sm shadow-2xl">
-                         <!-- REPLACE THE SRC BELOW WITH YOUR ACTUAL PHOTO -->
+                         <!-- Fallback REMOVED. This will look broken in preview but works in production if nr.jpg exists. -->
                         <img src="nr.jpg" 
-                             alt="Nageswara Rao Nirukonda" 
+                             alt="Nageshwar Rao N (Ensure nr.jpg is in the same folder)" 
                              class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-700">
                     </div>
                 </div>
@@ -419,6 +451,74 @@
         </div>
     </section>
 
+    <!-- Awards & Achievements -->
+    <section id="awards" class="py-24 bg-steel-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center gap-3 mb-12" data-aos="fade-right">
+                <i data-lucide="trophy" class="text-accent-blue w-8 h-8"></i>
+                <h2 class="font-serif text-3xl md:text-4xl text-white">Honors & Achievements</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Achievement 1 -->
+                <div class="glass-panel p-8 rounded-sm hover:border-accent-blue/50 transition-all group" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 flex-shrink-0 text-center">
+                            <span class="block text-2xl font-bold text-white">2023</span>
+                        </div>
+                        <div class="border-l border-slate-700 pl-6">
+                            <h4 class="text-lg font-bold text-white group-hover:text-accent-blue transition-colors">Operational Excellence Award</h4>
+                            <p class="text-sm text-accent-blue mb-2">Steel Authority of India Limited (SAIL)</p>
+                            <p class="text-slate-400 leading-relaxed">Recognized for significant contributions in optimizing Flash Butt Welding processes, resulting in reduced downtime and improved structural integrity of rail outputs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="glass-panel p-8 rounded-sm hover:border-accent-blue/50 transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 flex-shrink-0 text-center">
+                            <span class="block text-2xl font-bold text-white">2021</span>
+                        </div>
+                        <div class="border-l border-slate-700 pl-6">
+                            <h4 class="text-lg font-bold text-white group-hover:text-accent-blue transition-colors">Promotion to Senior Manager</h4>
+                            <p class="text-sm text-accent-blue mb-2">Professional Milestone</p>
+                            <p class="text-slate-400 leading-relaxed">Elevated to Senior Management role following consistent demonstration of leadership, technical expertise, and successful project delivery across the plant operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="glass-panel p-8 rounded-sm hover:border-accent-blue/50 transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 flex-shrink-0 text-center">
+                            <span class="block text-2xl font-bold text-white">2014</span>
+                        </div>
+                        <div class="border-l border-slate-700 pl-6">
+                            <h4 class="text-lg font-bold text-white group-hover:text-accent-blue transition-colors">Academic Research Recognition</h4>
+                            <p class="text-sm text-accent-blue mb-2">IIT Kharagpur</p>
+                            <p class="text-slate-400 leading-relaxed">Distinction for M.Tech thesis work on "Cryogenically Treated Aluminium Strips," contributing valuable insights to the field of material science and conductivity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="glass-panel p-8 rounded-sm hover:border-accent-blue/50 transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 flex-shrink-0 text-center">
+                            <span class="block text-2xl font-bold text-white">2010</span>
+                        </div>
+                        <div class="border-l border-slate-700 pl-6">
+                            <h4 class="text-lg font-bold text-white group-hover:text-accent-blue transition-colors">Distinguished Alumni Potential</h4>
+                            <p class="text-sm text-accent-blue mb-2">JNTUH College of Engineering</p>
+                            <p class="text-slate-400 leading-relaxed">Graduated with top honors in Metallurgy, setting a strong foundation for a specialized career in the steel and manufacturing industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="py-24 bg-steel-900">
         <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
@@ -426,11 +526,15 @@
             <p class="text-slate-400 mb-10">Available for executive leadership roles, consulting, and industry collaborations.</p>
             
             <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="mailto:contact@email.com" class="group flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 border border-slate-700 rounded-sm hover:border-accent-blue transition-all w-full md:w-auto">
+                <!-- Email Redirect -->
+                <a href="mailto:nag2sign@gmail.com" class="group flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 border border-slate-700 rounded-sm hover:border-accent-blue transition-all w-full md:w-auto">
                     <i data-lucide="mail" class="w-5 h-5 text-slate-400 group-hover:text-accent-blue"></i>
                     <span class="text-slate-200 font-medium">Send an Email</span>
                 </a>
-                <a href="#" class="group flex items-center justify-center gap-3 px-8 py-4 bg-[#0077b5] border border-[#0077b5] rounded-sm hover:bg-[#006097] transition-all w-full md:w-auto">
+                <!-- LinkedIn Redirect -->
+                <a href="https://www.linkedin.com/in/nageswara-rao-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                   target="_blank"
+                   class="group flex items-center justify-center gap-3 px-8 py-4 bg-[#0077b5] border border-[#0077b5] rounded-sm hover:bg-[#006097] transition-all w-full md:w-auto">
                     <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
                     <span class="text-white font-medium">Connect on LinkedIn</span>
                 </a>
@@ -443,10 +547,10 @@
     <!-- Footer -->
     <footer class="bg-black py-8 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-slate-600 text-sm">© 2024 Nageswara Rao Nirukonda. All rights reserved.</p>
+            <p class="text-slate-600 text-sm">© 2024 Nageshwar Rao N. All rights reserved.</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" class="text-slate-600 hover:text-white transition-colors text-sm">Resume</a>
-                <a href="#" class="text-slate-600 hover:text-white transition-colors text-sm">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/nageswara-rao-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-slate-600 hover:text-white transition-colors text-sm">LinkedIn</a>
             </div>
         </div>
     </footer>
